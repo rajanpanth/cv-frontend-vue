@@ -242,7 +242,7 @@ export default class PriorityEncoder extends CircuitElement {
             output += '    ze = 0;\n'
             output += '    if (in' + (numInput - 1) + ')\n'
             output += '      sel = ' + (numInput - 1) + ';\n'
-            for (var j = numInput - 2; j <= 0; j++) {
+            for (var j = numInput - 2; j >= 0; j--) {
                 output += '    else if (in' + j + ')\n'
                 output += '      sel = ' + j + ';\n'
             }
