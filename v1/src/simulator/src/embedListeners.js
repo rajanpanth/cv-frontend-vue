@@ -178,12 +178,12 @@ export default function startListeners() {
         if (e.key == 'Meta' || e.key == 'Control') {
             simulationArea.controlDown = true;
         }
-        if (simulationArea.controlDown && (e.keyCode == 187 || e.KeyCode == 171)) {
+        if (simulationArea.controlDown && (e.keyCode == 187 || e.keyCode == 171)) {
             e.preventDefault();
             ZoomIn();
         }
         // zoom out (-)
-        if (simulationArea.controlDown && (e.keyCode == 189 || e.Keycode == 173)) {
+        if (simulationArea.controlDown && (e.keyCode == 189 || e.keyCode == 173)) {
             e.preventDefault();
             ZoomOut();
         }
